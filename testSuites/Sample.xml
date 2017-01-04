@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SAMPLESUITE">
+	<listeners>
+		<listener class-name="one.tulasi.framework.listener.TestListener" />
+		<listener class-name="one.tulasi.framework.listener.RetryListener"/>
+		<listener class-name="one.tulasi.framework.listener.EmailReportListener"/>
+	</listeners>
+	<parameter name="browserType" value="chrome"/>
+	<test name="Build Verification Test">
+		<classes>
+			<class name="one.tulasi.framework.tests.SampleTest"/>
+		</classes>
+	</test>
+</suite>
